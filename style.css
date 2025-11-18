@@ -594,7 +594,7 @@ p.lead {
   padding: 9px;
   border-radius: 9px;
   background: rgb(27, 26, 26);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 16px solid rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(8px);
 }
 
@@ -615,4 +615,5 @@ p.lead {
     width: calc(33.33% - 10px);
   }
 }
+
 
