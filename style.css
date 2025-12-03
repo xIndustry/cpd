@@ -634,6 +634,10 @@ p.lead {
       margin-bottom: 10px;
     }
 
+element.style {
+color:white;
+}
+
 /* Desktop: 3 in a row */
 @media (min-width: 600px) {
   .value {
@@ -646,6 +650,7 @@ p.lead {
         grid-template-columns: 1fr;
       }
       
+
 
 
 
