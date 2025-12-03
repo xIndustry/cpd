@@ -609,11 +609,37 @@ p.lead {
   margin-top: 6px;
 }
 
+
+/* TEAM STRUCTURE */
+    .team {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .person {
+      padding: 12px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #0ea5a4, #06b6d4);
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
 /* Desktop: 3 in a row */
 @media (min-width: 600px) {
   .value {
     width: calc(33.33% - 10px);
   }
 }
+
 
 
