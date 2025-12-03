@@ -640,6 +640,13 @@ p.lead {
     width: calc(33.33% - 10px);
   }
 }
+@media (max-width:900px) {
+       .team {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+      }
+      
+
 
 
 
