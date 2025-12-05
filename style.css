@@ -102,6 +102,377 @@ body {
     transform: scaleX(1);
 }
 
+/* Styling for the square section with background image */
+.square {
+    height: 68vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover; /* Scale the image to cover the container */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Make the background image fixed */
+    
+}
+
+/* Styling for the cover image within the square section */
+.cover {
+    width: 100%; /* Allow cover image to fill the container */
+    height: 100%; /* Allow cover image to fill the container */
+    object-fit: cover; /* Scale image to cover entire container */
+    overflow: hidden;
+}
+
+/* Styling for the main container */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 8%;
+    min-height: calc(100vh - 150px);
+    
+}
+
+/* Styling for rows within the container */
+.container .row {
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styling for columns within rows */
+.row section.col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the right column */
+.row section.right {
+    flex-basis: 35%;
+    min-width: 320px;
+}
+
+/* Styling for the left column */
+.row section.left {
+    flex-basis: 60%;
+}
+
+/* Styling for the "Contact" header */
+.start {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff; /* Set text color to white */
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+/* Styling for subheadings */
+h2 {
+    color: #fff; /* Set text color to white */
+}
+
+/* Styling for the contact title and decorative lines */
+section.right .contactTitle h2 {
+    margin-top: 45px;
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+/* Styling for the lines before and after the contact title */
+section.right .contactTitle h2::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: #8f8a8a;
+    top: 120%;
+    left: 0;
+}
+
+section.right .contactTitle h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #a6522a;
+    top: calc(120% - 1px);
+    left: 0;
+}
+
+/* Styling for contact information paragraph */
+section.right .contactTitle p {
+    font-size: 17px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding-bottom: 30px;
+}
+
+.social-wrapper {
+    text-align: center;
+}
+
+.social-title {
+    display: block;
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    color: #fff; /* Set text color to white */
+    font-size: 17px; /* Set font size to 17px */
+}
+
+/* General styling for each social media item */
+.social-item {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    border-radius: 25px;
+    border: none !important;
+    margin: 10px;
+    position: relative;
+    transform: scale(1);
+    transition: all 0.33s !important;
+    vertical-align: top;
+    background-size: 43px 43px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #090606; /* Default background color */
+}
+
+.social-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Facebook */
+.social-item.facebook {
+    background-color: #000000;
+    background-image: url('icons/facebook.png');
+}
+/* Instagram */
+.social-item.instagram {
+    background-color: #000000;
+    background-image: url('icons/instagram.webp');
+}
+
+/* X (formerly Twitter) */
+.social-item.x {
+    background-color: #000000;
+    background-image: url('icons/x.png');
+}
+
+/* YouTube */
+.social-item.youtube {
+    background-color: #000000;
+    background-image: url('icons/youtube.png');
+}
+
+/* LinkedIn */
+.social-item.linkedin {
+    background-color: #000000;
+    background-image: url('icons/linkedin-icon-512x512-0t094boq.png');
+}
+
+/* Styling for the message form on the left */
+.row section.left .messageForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+/* Styling for input groups within the message form */
+.row section.left .inputGroup {
+    margin: 18px 0px;
+    position: relative;
+}
+
+/* Styling for half-width input groups */
+.messageForm .halfWidth {
+    flex-basis: 48%;
+}
+
+/* Styling for full-width input groups */
+.messageForm .fullWidth {
+    flex-basis: 100%;
+}
+
+/* Styling for text inputs and textareas within the message form */
+.messageForm input,
+.messageForm textarea {
+    width: 100%;
+    font-size: 18px;
+    padding: 2px 0px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #666;
+    outline: none;
+}
+
+/* Styling for the textarea within the message form */
+.messageForm textarea {
+    resize: none;
+    height: 120px;
+    display: block;
+}
+
+/* Styling for the scrollbar in the textarea */
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Styling for the scrollbar track in the textarea */
+textarea::-webkit-scrollbar-track {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+}
+
+/* Styling for the scrollbar thumb in the textarea */
+textarea::-webkit-scrollbar-thumb {
+    background-color: #a6522a;
+    border-radius: 15px;
+}
+
+/* Styling for input labels */
+.inputGroup label {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    color: #888;
+    font-size: 18px;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+/* Styling for input labels when focused message filled */
+.inputGroup:nth-child(4) label {
+    top: 2px;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup textarea:focus ~ label,
+.inputGroup input:valid ~ label,
+.inputGroup textarea:valid ~ label {
+    transform: translateY(-30px);
+    font-size: 16px;
+}
+
+.messageForm textarea:focus + label {
+    transform: translateY(-125px); /* You can adjust the value to control how much it moves up */
+}
+
+/* Styling for the send message button */
+.inputGroup button {
+    padding: 11px 16px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #a6522a;
+    color: #ddd;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.521);
+    transition: 0.4s;
+}
+
+/* Hover effect for the send message button */
+.inputGroup button:hover {
+    background-color: #a6522a;
+    color: #000000;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #a6522a;
+}
+
+
+/* Styles for the "About Solution" section */
+.seen {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px 8%;
+    min-height: calc(100vh - 150px);
+    position: relative;
+}
+
+.seen .saw {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Additional styling for the "Way" class */
+.way {
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+.text2 {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* Styling of icon on Contact Information */
+
+.icon li {
+    position: relative;
+    padding: 0 0 0 38px;
+    font-size: 20px;
+}
+
+.icon li strong {
+    display: block;
+    width: 100%;
+    color: #fbfbfb;
+    margin-bottom: -3px;
+   font-size: 18px;
+}
+
+
+.icon li i {
+    font-size: 24px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    color: #f4f5fb;
+}
+
+/* Completely independent footer styles */
+footer {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 19px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+footer p {
+    all: unset;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
 
 
 /* Styling for the scrollbar in the entire page */
@@ -305,16 +676,3 @@ color:white;
   background: var(--glass);
   border: 1px solid rgba(255,255,255,0.03);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
