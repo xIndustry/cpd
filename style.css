@@ -677,53 +677,27 @@ color:white;
   border: 1px solid rgba(255,255,255,0.03);
 }
 
-/* Team Grid */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 16px;
-  margin-top: 18px;
-}
 
+
+
+
+.team-grid {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 16px;
+margin-top: 30px;
+}
 .teammember {
-  background: var(--glass);
-  padding: 18px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.05);
-  text-align: center;
+background: #1b1a1a;
+padding: 20px;
+text-align: center;
+border-radius: 12px;
+border: 1px solid rgba(255,255,255,0.05);
 }
-
-.teammember strong {
-  display: block;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.teammember span {
-  font-size: 13px;
-  color: var(--muted);
-}
-
-footer {
-  margin-top: 48px;
-  padding: 18px;
-  text-align: center;
-  color: var(--muted);
-}
-
-@media (max-width:900px) {
-  .values {
-    flex-direction: column;
-  }
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 16px;
-  margin-top: 18px;
+.teammember strong { display: block; font-size: 18px; margin-top: 10px; }
+.teammember span { font-size: 14px; color: #aaa; }
+@media (max-width: 900px) {
+.team-grid { grid-template-columns: 1fr; }
 }
 
 
