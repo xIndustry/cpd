@@ -629,17 +629,55 @@ color:white;
       }
 
 
-    card {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .card {
   background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.02));
   padding: 18px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(2,6,23,0.6);
 }
 
+.values {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
 
+.value {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+  background: var(--glass);
+  border: 1px solid rgba(255,255,255,0.03);
+}
 
-
-    /* Team Grid */
+/* Team Grid */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
