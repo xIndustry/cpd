@@ -629,6 +629,15 @@ color:white;
       }
 
 
+    card {
+  background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.02));
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+
+
+
 
     /* Team Grid */
 .team-grid {
@@ -672,6 +681,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
